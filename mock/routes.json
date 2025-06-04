@@ -1,0 +1,12 @@
+{
+  "/api/auth/login": "/users/1",
+  "/api/auth/register": "/users/1",
+  "/api/auth/me": "/users/1",
+  "/api/users/profile": "/users/1",
+  "/api/users/settings": "/users/1",
+  "/api/contacts": "/contacts",
+  "/api/chats": "/chats",
+  "/api/chats/:id": "/chats/:id",
+  "/api/groups": "/groups",
+  "/api/groups/:id": "/groups/:id"
+}

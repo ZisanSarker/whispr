@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WhatsApp Clone with Mock Data
+
+A fully functional WhatsApp clone built with Next.js, featuring real-time messaging, group chats, and comprehensive mock data implementation.
+
+## Features
+
+- 🔐 Authentication (Login/Signup)
+- 💬 Real-time messaging
+- 👥 Group chats with admin controls
+- 📱 Responsive design
+- 🌙 Dark mode support
+- 📎 File attachments
+- 🔔 Notification settings
+- 👤 User profiles
+- 🔍 Search functionality
+
+## Mock Data Implementation
+
+This project uses json-server to provide a complete mock backend with:
+
+- User authentication
+- Chat management
+- Message handling
+- Contact management
+- Group operations
+- Real-time features simulation
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+\`\`\`bash
+npm install
+\`\`\`
 
-```bash
+2. Start the development server:
+\`\`\`bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start both the Next.js app (port 3000) and the json-server mock API (port 3001).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Mock Data Structure
 
-## Learn More
+The mock data includes:
+- 6 users with realistic profiles
+- 5 chat conversations (individual and group)
+- Multiple messages per chat
+- Contact lists
+- Group settings and permissions
 
-To learn more about Next.js, take a look at the following resources:
+## Default Login
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can use any email/password combination to log in, as the mock authentication accepts all credentials and returns the default user profile.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+\`\`\`
+├── app/                    # Next.js app directory
+├── components/            # React components
+├── lib/                   # Utility functions and API
+├── mock/                  # Mock data and json-server config
+├── types/                 # TypeScript type definitions
+└── hooks/                 # Custom React hooks
+\`\`\`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- json-server (mock backend)
+- Socket.io (mock real-time)
+- Sonner (toast notifications)
+
+## Mock Features
+
+- **Authentication**: Simulated login/signup with localStorage tokens
+- **Real-time**: Mock socket implementation for live messaging
+- **File Uploads**: Client-side file handling with preview
+- **Notifications**: Toast notifications for user feedback
+- **Responsive**: Mobile-first design with desktop support
+
+## Development Notes
+
+- All API calls are mocked and return realistic data
+- Socket events are simulated for real-time features
+- File uploads are handled client-side only
+- Database operations are simulated with json-server
+- Authentication uses mock JWT tokens stored in localStorage
