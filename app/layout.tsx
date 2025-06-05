@@ -10,9 +10,8 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "WhatsApp Clone",
-  description: "A modern WhatsApp clone built with Next.js",
-    generator: 'v0.dev'
+  title: "Whispr",
+  description: "Whispr is a sleek and modern real-time chat platform designed for fast, secure, and seamless communication."
 }
 
 export default function RootLayout({

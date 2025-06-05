@@ -64,7 +64,7 @@ export default function SignupPage() {
             <MessageCircle className="h-8 w-8 text-white" />
           </div>
           <CardTitle className="text-2xl">Create account</CardTitle>
-          <CardDescription>Sign up for a new WhatsApp account</CardDescription>
+          <CardDescription>Sign up for a new Whispr account</CardDescription>
         </CardHeader>
 
         <form onSubmit={handleSubmit}>

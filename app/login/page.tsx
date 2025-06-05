@@ -51,7 +51,7 @@ export default function LoginPage() {
             <MessageCircle className="h-8 w-8 text-white" />
           </div>
           <CardTitle className="text-2xl">Welcome back</CardTitle>
-          <CardDescription>Sign in to your WhatsApp account</CardDescription>
+          <CardDescription>Sign in to your Whispr account</CardDescription>
         </CardHeader>
 
         <form onSubmit={handleSubmit}>

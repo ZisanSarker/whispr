@@ -91,11 +91,11 @@ export function Sidebar() {
   )
 
   return (
-    <div className="w-80 border-r border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 flex flex-col h-full">
+    <div className="w-[25%] border-r border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 flex flex-col h-full">
       {/* Header */}
       <div className="p-4 border-b border-gray-200 dark:border-gray-800">
         <div className="flex items-center justify-between mb-4">
-          <h1 className="text-xl font-semibold text-gray-900 dark:text-white">WhatsApp</h1>
+          <h1 className="text-xl font-semibold text-gray-900 dark:text-white">Whispr</h1>
 
           <div className="flex items-center gap-2">
             <Dialog open={showNewChatDialog} onOpenChange={setShowNewChatDialog}>
@@ -127,7 +127,7 @@ export function Sidebar() {
                           onClick={() => handleNewChat(contact.id)}
                         >
                           <Avatar className="h-8 w-8 mr-3">
-                            <AvatarImage src={contact.avatar || "/placeholder.svg"} />
+                            <AvatarImage src={contact.avatar || "/person_placeholder.svg"} />
                             <AvatarFallback className="text-xs">{getInitials(contact.name)}</AvatarFallback>
                           </Avatar>
                           <div className="text-left">
